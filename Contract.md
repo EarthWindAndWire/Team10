@@ -5,29 +5,33 @@ ECE 3400
 Semester: Fall 2017
 Team # 10 - Earth, Wind, and Wire
 
-Team Members: 
-Maria Bobbett
-Jennifer Fuhrer
-Joshua Diaz
-Dean Wang
-Leandro Dorta Duque
-Tejas Advait
-Team Procedures
-Meeting Date/Time/Location
-5 pm on Monday in Rhodes
-Backup: 3:30 on Friday
-Meeting Agendas
-The weekly leader will set the meeting agenda and be responsible for following it during the meeting, and remind team members
-The weekly leader will drive the weekly meeting and keep the team on track
-Decision Making
+Team Members: <br>
+Maria Bobbett<br>
+Jennifer Fuhrer<br>
+Joshua Diaz<br>
+Dean Wang<br>
+Leandro Dorta Duque<br>
+Tejas Advait<br>
+Team Procedures<br>
+
+
+Meeting Date/Time/Location<br>
+5 pm on Monday in Rhodes<br>
+Backup: 3:30 on Friday<br>
+
+Meeting Agendas:<br>
+The weekly leader will set the meeting agenda and be responsible for following it during the meeting, and reminding team members<br>
+The weekly leader will drive the weekly meeting and keep the team on track<br>
+
+Decision Making:<br>
 We will make team decisions using the Socratic method
-Meeting Minutes
-The team will rotate the responsibility of taking meeting minutes, and all notes will be uploaded onto Google Drive
-Communication
+Meeting Minutes<br>
+The team will rotate the responsibility of taking meeting minutes, and all notes will be uploaded onto Google Drive<br>
+Communication<br>
 Preferred method of communication: facebook messenger
-Respond to messages by the end of the day
-Team Expectations
-Work Quality
+Respond to messages by the end of the day<br>
+Team Expectations:<br>
+Work Quality:<br>
 Agree on a (realistic) level of quality for website updates, individual work/design, peer reviews, etc.
 First, the robot has to work
 Once it’s working, we can build on the design
