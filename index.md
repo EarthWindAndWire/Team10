@@ -9,8 +9,9 @@ Joshua Diaz <br>
 Tejas Advait <br>
 Jennifer Fuhreh <br>
 Leandro Dorta Duque <br>
-Dean Wang <vr>
+Dean Wang <br>
 </p>
+
 ## Lab 1
 ### The Goal
 
