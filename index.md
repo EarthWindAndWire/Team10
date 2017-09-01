@@ -1,6 +1,6 @@
 ## About Us
 
-We're Team 10, better known as <name_undecided>.
+We're Team 10, better known as \<name_undecided\>.
 
 
 Members:
