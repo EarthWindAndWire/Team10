@@ -4,6 +4,7 @@ We're Team 10, better known as **Earth Wind, and Wire**.
 
 See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
+
 ##### Members: <br>
 Maria Bobbett <br>
 Joshua Diaz <br>
@@ -11,6 +12,8 @@ Tejas Advait <br>
 Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
 Yixuan Wang <br>
+
+The members of this group are bound by the [Team Contract](Contract.md). 
 
 ## Lab 1: Microcontroller
 Lab 1 was most of the Team 10's first experience to robotics.
