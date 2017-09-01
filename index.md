@@ -11,11 +11,11 @@ Jennifer Fuhreh <br>
 Leandro Dorta Duque <br>
 Dean Wang <br>
 
-
-## Lab 1
-### The Goal
-
+## Lab 1: Microcontroller
 Lab 1 was most of ours' first experience to robotics.
+### The Goal
+In this lab,the team explored the various funtionalities of the Arduino Uno,eventually building up enough ability to construct a simple autonomous robot.
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -38,12 +38,4 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DeanWang043/Team10/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
