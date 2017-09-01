@@ -1,7 +1,8 @@
 ## About Us
 
-We're Team 10, better known as name_undecided.
+We're Team 10, better known as **Earth Wind, and Wire**.
 
+See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
 ##### Members: <br>
 Maria Bobbett <br>
