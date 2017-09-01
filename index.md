@@ -7,7 +7,7 @@ Members: <br>
 Maria Bobbett <br>
 Joshua Diaz <br>
 Tejas Advait <br>
-Jennifer Fuhreh <br>
+Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
 Dean Wang <br>
 
@@ -16,26 +16,15 @@ Lab 1 was most of ours' first experience to robotics.
 ### The Goal
 In this lab,the team explored the various funtionalities of the Arduino Uno,eventually building up enough ability to construct a simple autonomous robot.
 
-### Markdown
+### Blink
+This being the first time that most team members have experimented with an Arduino, we began by uploading and running the device'smost primitive sketch - "Blink".
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Let's Take This Outside
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+#### Pass the Pot(entiometer)
 
 
+###
+
+
+### Team 10 Does the Robot
