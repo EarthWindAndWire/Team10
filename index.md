@@ -1,6 +1,6 @@
 ## About Us
 
-We're Team 10, better known as \<name_undecided\>.
+We're Team 10, better known as name_undecided.
 
 
 Members:
@@ -11,8 +11,8 @@ Jennifer Fuhreh
 Leandro Dorta Duque
 Dean Wang
 
-##Lab 1
-###The Goal
+## Lab 1
+### The Goal
 
 Lab 1 was most of ours' first experience to robotics.
 ### Markdown
