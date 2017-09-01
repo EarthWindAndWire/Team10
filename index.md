@@ -10,7 +10,7 @@ Joshua Diaz <br>
 Tejas Advait <br>
 Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
-Dean Wang <br>
+Yixuan Wang <br>
 
 ## Lab 1: Microcontroller
 Lab 1 was most of the Team 10's first experience to robotics.
