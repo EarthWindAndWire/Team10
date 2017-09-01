@@ -1,5 +1,5 @@
 ## About Us
-<p>
+
 We're Team 10, better known as name_undecided.
 
 
@@ -10,7 +10,7 @@ Tejas Advait <br>
 Jennifer Fuhreh <br>
 Leandro Dorta Duque <br>
 Dean Wang <br>
-</p>
+
 
 ## Lab 1
 ### The Goal
