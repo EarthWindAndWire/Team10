@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## About Us
 
-You can use the [editor on GitHub](https://github.com/DeanWang043/Team10/edit/master/index.md) to maintain and preview the content for your website in Markdwn files.
+We're Team 10, better known as **Earth Wind, and Wire**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
-### Markdown
+##### Members: <br>
+Maria Bobbett <br>
+Joshua Diaz <br>
+Tejas Advait <br>
+Jennifer Fuhrer <br>
+Leandro Dorta Duque <br>
+Yixuan Wang <br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Lab 1: Microcontroller
+Lab 1 was most of the Team 10's first experience to robotics.
+### The Goal
+In this lab,the team explored the various funtionalities of the Arduino Uno,eventually building up enough ability to construct a simple autonomous robot.
 
-```markdown
-Syntax highlighted code block
+### Blink
+This being the first time that most team members have experimented with an Arduino, we began by uploading and running the device'smost primitive sketch - "Blink".
 
-# Header 1
-## Header 2
-### Header 3
+#### Let's Take This Outside
 
-- Bulleted
-- List
+#### Pass the Pot(entiometer)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### Parallax Servos
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DeanWang043/Team10/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Team 10 Does the Robot
