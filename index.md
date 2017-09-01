@@ -1,9 +1,20 @@
-## Welcome to GitHub Pages
+## About Us
 
-You can use the [editor on GitHub](https://github.com/DeanWang043/Team10/edit/master/index.md) to maintain and preview the content for your website in Markdwn files.
+We're Team 10, better known as <name_undecided>.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+Members:
+Maria Bobbett
+Joshua Diaz
+Tejas Advait
+Jennifer Fuhreh
+Leandro Dorta Duque
+Dean Wang
+
+##Lab 1
+###The Goal
+
+Lab 1 was most of ours' first experience to robotics.
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
