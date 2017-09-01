@@ -4,12 +4,12 @@ We're Team 10, better known as name_undecided.
 
 
 Members:
-Maria Bobbett
-Joshua Diaz
-Tejas Advait
-Jennifer Fuhreh
-Leandro Dorta Duque
-Dean Wang
+Maria Bobbett \n
+Joshua Diaz \n
+Tejas Advait \n
+Jennifer Fuhreh \n
+Leandro Dorta Duque \n
+Dean Wang \n
 
 ## Lab 1
 ### The Goal
