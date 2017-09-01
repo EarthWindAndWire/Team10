@@ -12,7 +12,7 @@ Leandro Dorta Duque <br>
 Dean Wang <br>
 
 ## Lab 1: Microcontroller
-Lab 1 was most of ours' first experience to robotics.
+Lab 1 was most of the Team 10's first experience to robotics.
 ### The Goal
 In this lab,the team explored the various funtionalities of the Arduino Uno,eventually building up enough ability to construct a simple autonomous robot.
 
