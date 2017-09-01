@@ -24,7 +24,7 @@ This being the first time that most team members have experimented with an Ardui
 #### Pass the Pot(entiometer)
 
 
-###
+### Parallax Servos
 
 
 ### Team 10 Does the Robot
