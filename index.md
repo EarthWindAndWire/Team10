@@ -2,12 +2,14 @@
 
 We're Team 10, better known as **Earth Wind, and Wire**.
 
+This team is a part of The ECE 3400 Lab Section 404 at Cornell University.
+
 See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
 
 ##### Members: <br>
 Maria Bobbett <br>
-Joshua Diaz <br>
+Joshua Dibr>
 Tejas Advait <br>
 Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
