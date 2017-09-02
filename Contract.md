@@ -32,7 +32,7 @@ The team will rotate the responsibility of taking meeting minutes, and all notes
 Preferred method of communication: facebook messenger<br>
 Respond to messages by the end of the day<br>
 
-##### Team Expectations:<br>
+**Team Expectations:**<br>
 Work Quality:<br>
 Agree on a (realistic) level of quality for website updates, individual work/design, peer reviews, etc. <br>
 First, the robot has to work <br>
@@ -89,8 +89,7 @@ Oct 21st - Nov 3rd (Lab 4 and Milestone 3): Tejas Advait
 Nov 4th - Nov 17th (Milestone 4): Leandro Dorta 
 
 Nov 18th - Dec 5th (Final competition and deadline for the website):Joshua Diaz 
-
-(If you are more or less than 6 people, please adjust the time periods accordingly). 
+ 
 ```
 
 I participated in formulating the standards, roles, and procedures as stated in this contract.<br>
