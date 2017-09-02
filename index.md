@@ -9,7 +9,7 @@ See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
 ##### Members: <br>
 Maria Bobbett <br>
-Joshua Dibr>
+Joshua Diaz <br>>
 Tejas Advait <br>
 Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
