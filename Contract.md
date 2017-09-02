@@ -30,14 +30,14 @@ The team will rotate the responsibility of taking meeting minutes, and all notes
 
 **Communication:**<br>
 Preferred method of communication: facebook messenger<br>
-Respond to messages by the end of the day<br>
+Response Time: Respond to messages by the end of the day<br>
 
 **Team Expectations:**<br>
 Work Quality:<br>
-Agree on a (realistic) level of quality for website updates, individual work/design, peer reviews, etc. <br>
 First, the robot has to work <br>
 Once it’s working, we can build on the design <br>
-Agree on when individuals/sub-teams must finish their part (on the deadline, or hours or a day before the deadline such that other team members can check their work): <br>
+Work will be reviewed by the team to make sure members are satisfied with changes.<br>
+
 We will have a check-in period two days before the official deadline <br>
 
 **Strategies to fulfill these standards:** <br>
@@ -68,8 +68,7 @@ Prepare for a heavier load towards the end of the semester <br>
 **How should a team member catch up if they have to miss a meeting?:** <br>
 Review meeting notes on drive, ask questions over messenger if anything is unclear <br>
 Consequences for Failing to Follow Procedures and Fulfill Expectations <br>
-Describe how, as a group, you would handle individuals who do not live up to this contract:<br>
-Team leader will address individuals who do not uphold the contract <br>
+The team leader will address individuals who do not uphold the contract <br>
 If it really impacts the project, we will address it with the whole group <br>
 What your team will do if these infractions continue: <br>
 We will bring the issue to Kirsten<br>
@@ -92,9 +91,9 @@ Nov 18th - Dec 5th (Final competition and deadline for the website):Joshua Diaz
  
 ```
 
-I participated in formulating the standards, roles, and procedures as stated in this contract.<br>
-I understand that I am obligated to abide by these terms and conditions.<br>
-I understand that if I do not abide by these terms and conditions, I will suffer the consequences as stated in this contract. <br>
+_I participated in formulating the standards, roles, and procedures as stated in this contract._<br>
+_I understand that I am obligated to abide by these terms and conditions._<br>
+_I understand that if I do not abide by these terms and conditions, I will suffer the consequences as stated in this contract._ <br>
 
 Joshua Diaz_ _ _ _ __ _ _ _ _   date _ _ _ 9/1/ 2017 <br>
 
