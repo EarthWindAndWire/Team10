@@ -79,16 +79,19 @@ The servo was attached to the previous potentiometer in order to have the speed 
 
 The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
 
-A video of the configuration in action can be found below (click)<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
-alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
+A video of the configuration in action can be found below (click)<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RKeNJGQvyiw?rel=0" frameborder="0" allowfullscreen></iframe>
+<!--<a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
+alt="Potentiate That Servo" width="240" height="180" border="10" /></a>-->
 
 
 ### Team 10 Does the Robot
 <br>
-<!--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8?rel=0" frameborder="0" allowfullscreen></iframe>-->
-<a href="https://www.youtube.com/embed/w1iMTuMnZG8"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
-alt="Autonomous Robot" width="240" height="180" border="10" /></a>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8?rel=0" frameborder="0" allowfullscreen></iframe>
+<!--<a href="https://www.youtube.com/embed/w1iMTuMnZG8"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
+alt="Autonomous Robot" width="240" height="180" border="10" /></a>-->
 
 
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
