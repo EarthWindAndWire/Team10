@@ -85,10 +85,9 @@ alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
 
 ### Team 10 Does the Robot
 <br>
+<a href="https://www.youtube.com/embed/w1iMTuMnZG8"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
+alt="Autonomous Robot" width="240" height="180" border="10" /></a>
 
-<div style="text-align: center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8" frameborder="0" allowfullscreen></iframe>
-</div>
 
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
 - Chassis
