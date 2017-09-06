@@ -1,5 +1,7 @@
 ## Team Minutes
 
+[Return to main page](index.md)
+
 ### 9/1/17
 ```markdown
 Goals:

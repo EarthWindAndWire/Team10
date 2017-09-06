@@ -1,5 +1,6 @@
 ## Team Contract
 
+[Return to main page](index.md)
 
 ECE 3400
 Semester: Fall 2017
