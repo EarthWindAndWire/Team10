@@ -57,16 +57,17 @@ For the first step of this part, we built a voltage divider circuit using a pote
 ![Serial Monitor](SerialMonitor.png "Serial Monitor")
 
 Serial output from potentiometer code:<br>
-![Code](SerialMonitor\ Code.png "Serial Monitor Code")
+![Code](SerialMonitor Code.png "Serial Monitor Code")
 
 #### Modifications
 For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
 ![Circuit Image](IMG_3195.JPG "Circuit Image") 
+<br>
 ![Code](3195Code.png "Circuit Code")
 
 The PWM frequency of the LED was **490.2 Hz**
 
-Image:
+Image:<br>
 ![Freq](PWNFreq.png "PWN Frequency")
 
 ### Parallax Servos
@@ -78,7 +79,7 @@ The servo was attached to the previous potentiometer in order to have the speed 
 
 The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
 
-A video of the configuration in action can be found below<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
+A video of the configuration in action can be found below (click)<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
 alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
 
 
@@ -87,14 +88,14 @@ alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
 alt="Domo Origato" width="240" height="180" border="10" /></a>
 
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
--Chassis
--Screws
--9V battery with clip
--Ball bearing
--2 wheels 
--Allen key 
+- Chassis
+- Screws
+- 9V battery with clip
+- Ball bearing
+- 2 wheels 
+- Allen key 
 
-![Robot in Pieces](whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png "Robot Parts")
+![Robot in Pieces](whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png "Robot Baby")
 
 We started mounting the motors onto the motor brackets and then attaching them to the bottom part of the chassis. After this, we installed the wheels and placed the Arduino Uno and the 9V battery on the top side of the base plate. At first, we were using the breadboard for the circuit but we realized that it was better to connect the motors directly to the pins in the Arduino Uno. However, in the future we have to figure out a way to colocate the breadboard on the chassis since we will need it to connect other electrical components such as the sensors. 
 
