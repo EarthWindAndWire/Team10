@@ -2,9 +2,9 @@
 
 [Return to main page](index.md)
 
-ECE 3400
-Semester: Fall 2017
-Team # 10 - Earth, Wind, and Wire
+ECE 3400<br>
+Semester: Fall 2017<br>
+Team # 10 - Earth, Wind, and Wire<br>
 
 **Team Members:** <br>
 Maria Bobbett<br>
