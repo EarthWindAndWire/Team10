@@ -50,11 +50,33 @@ Here's what the external LED looked like set up: <br>
 
 ![External LED](IMG_3192.JPG "External LED")
 
-
+### Analog Voltage and LED Output
 #### Pass the Pot(entiometer)
+For the first step of this part, we built a voltage divider circuit using a potentiometer. We then output the analog voltage values controlled by the potentiometer to the serial monitor.
 
+![Serial Monitor](SerialMonitor.png "Serial Monitor")
 
+Serial output from potentiometer code:<br>
+![Code](SerialMonitor\ Code.png "Serial Monitor Code")
+
+#### Modifications
+For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
+![Serial Monitor](SerialMonitor.png "Serial Monitor") 
+![Serial Monitor](SerialMonitor.png "Serial Monitor")
+
+The PWM frequency of the LED was **490.2 Hz**
+
+Image:
+![Serial Monitor](SerialMonitor.png "Serial Monitor")
 ### Parallax Servos
+The purpose of this lab boils down to completing some autonomous task performed by a robot. Our robot will be moving in a simple pattern, requiring propulsion. In order to provide this, we will use Parallax Continuous Rotation Servos in tandem with the Arduino Servo.h library.
 
+The servo was attached to the previous potentiometer in order to have the speed at which the servo operates become dependent on its setting. The following code was then uploaded to the arduino:
 
+![Serial Monitor](SerialMonitor.png "Serial Monitor")
+
+The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
+
+A video of the configuration in action can be found here a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be" target="_blank"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
+alt="Potentiate The Servo" width="240" height="180" border="10" /></a>
 ### Team 10 Does the Robot
