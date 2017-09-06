@@ -15,7 +15,7 @@ Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
 Yixuan Wang <br>
 
-The members of this group are bound by the [Team Contract](Contract.md). 
+The members of this group are bound by the [Team Contract](Contract.md).
 
 ## Lab 1: Microcontroller
 Lab 1 was most of the Team 10 members' first experience with robotics.
@@ -41,7 +41,7 @@ This being the first time that most team members have experimented with an Ardui
 
 #### Let's Take This Outside
 
-First, we ran the Blink sketch to verify that the Arduino board and internal LED were working. Then we modified the code to blink an external LED, and verified that all of the pins were functioning. 
+First, we ran the Blink sketch to verify that the Arduino board and internal LED were working. Then we modified the code to blink an external LED, and verified that all of the pins were functioning.
 
 Code:<br>
 ![Blink Code](Selection_002.png "Blink Code")
@@ -60,8 +60,8 @@ Serial output from potentiometer code:<br>
 ![Code](SerialMonitor Code.png "Serial Monitor Code")
 
 #### Modifications
-For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
-![Circuit Image](IMG_3195.JPG "Circuit Image") 
+For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage.
+![Circuit Image](IMG_3195.JPG "Circuit Image")
 <br>
 ![Code](3195Code.png "Circuit Code")
 
@@ -79,25 +79,24 @@ The servo was attached to the previous potentiometer in order to have the speed 
 
 The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
 
-A video of the configuration in action can be found below (click)<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
+A video of the configuration in action can be found below (click)<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
 alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
 
 
 ### Team 10 Does the Robot
-<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=w1iMTuMnZG8&feature=youtu.be"><img src="http://img.youtube.com/vi/w1iMTuMnZG8&feature=youtu.be/0.jpg" 
-alt="Domo Origato" width="240" height="180" border="10" /></a>
+<br> <iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8" frameborder="0" allowfullscreen></iframe>
 
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
 - Chassis
 - Screws
 - 9V battery with clip
 - Ball bearing
-- 2 wheels 
-- Allen key 
+- 2 wheels
+- Allen key
 
 ![Robot in Pieces](whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png "Robot Baby")
 
-We started mounting the motors onto the motor brackets and then attaching them to the bottom part of the chassis. After this, we installed the wheels and placed the Arduino Uno and the 9V battery on the top side of the base plate. At first, we were using the breadboard for the circuit but we realized that it was better to connect the motors directly to the pins in the Arduino Uno. However, in the future we have to figure out a way to colocate the breadboard on the chassis since we will need it to connect other electrical components such as the sensors. 
+We started mounting the motors onto the motor brackets and then attaching them to the bottom part of the chassis. After this, we installed the wheels and placed the Arduino Uno and the 9V battery on the top side of the base plate. At first, we were using the breadboard for the circuit but we realized that it was better to connect the motors directly to the pins in the Arduino Uno. However, in the future we have to figure out a way to colocate the breadboard on the chassis since we will need it to connect other electrical components such as the sensors.
 
 To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.  
 
