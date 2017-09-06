@@ -82,16 +82,12 @@ The code takes the voltage input to the arduino (controlled by the potentiometer
 A video of the configuration in action can be found below (click)<br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RKeNJGQvyiw?rel=0" frameborder="0" allowfullscreen></iframe>
-<!--<a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
-alt="Potentiate That Servo" width="240" height="180" border="10" /></a>-->
 
 
 ### Team 10 Does the Robot
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8?rel=0" frameborder="0" allowfullscreen></iframe>
-<!--<a href="https://www.youtube.com/embed/w1iMTuMnZG8"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg"
-alt="Autonomous Robot" width="240" height="180" border="10" /></a>-->
 
 
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
@@ -108,7 +104,9 @@ We started mounting the motors onto the motor brackets and then attaching them t
 
 To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PooEK1s3c94" frameborder="0" allowfullscreen></iframe>
+
 ### Conclusion
-In this lab, most of us got the chance to work with Arduino Uno and the Arduino IDE for the first time and constructed simple Arduino programs with extra components. We successfully assembled an autonomous robot that could perform simple tasks like driving a square path. This robot is not yet able to perform more intelligent actions like following a routine. With the help of sensors and more alogrithms, we will turn it into an intelligent system with the ability to react upon its environment in the future.
+In this lab, most of us got the chance to work with Arduino Uno and the Arduino IDE for the first time and constructed simple Arduino programs with extra components. We successfully assembled an autonomous robot that could perform simple tasks like driving a square path. This robot is not yet able to perform more intelligent actions like following a routine. With the help of sensors and more algorithms, we will turn it into an intelligent system with the ability to react upon its environment in the future.
 
 ![Robot](RobotCar.jpg "Robot")
