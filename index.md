@@ -104,7 +104,7 @@ We started mounting the motors onto the motor brackets and then attaching them t
 
 To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PooEK1s3c94" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PooEK1s3c94?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ### Conclusion
 In this lab, most of us got the chance to work with Arduino Uno and the Arduino IDE for the first time and constructed simple Arduino programs with extra components. We successfully assembled an autonomous robot that could perform simple tasks like driving a square path. This robot is not yet able to perform more intelligent actions like following a routine. With the help of sensors and more algorithms, we will turn it into an intelligent system with the ability to react upon its environment in the future.
