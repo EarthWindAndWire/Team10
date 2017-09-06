@@ -18,7 +18,7 @@ Yixuan Wang <br>
 The members of this group are bound by the [Team Contract](Contract.md). 
 
 ## Lab 1: Microcontroller
-Lab 1 was most of the Team 10's first experience to robotics.
+Lab 1 was most of the Team 10 members' first experience with robotics.
 ### The Goal
 
 The goal of this introductory lab section was to get familiarized with the different functionalities of the Arduino Uno and the Arduino IDE. Our team had the opportunity to construct a simple functional Arduino program using multiple external components and the Arduino Uno. Once we had this basic understanding, we proceeded to assembly the robot and made it perform an autonomous task such as driving a square path.
@@ -34,17 +34,22 @@ The goal of this introductory lab section was to get familiarized with the diffe
 - Several resistors (kΩ range)
 - 1 Solderless breadboard
 
-
 ### Blink
-This being the first time that most team members have experimented with an Arduino, we began by uploading and running the device'smost primitive sketch - "Blink".
+This being the first time that most team members have experimented with an Arduino, we began by uploading and running the device's most primitive sketch - "Blink".
+
+![Blink Code1](BlinkBasic.png "Blink Code1")
+
+#### Let's Take This Outside
 
 First, we ran the Blink sketch to verify that the Arduino board and internal LED were working. Then we modified the code to blink an external LED, and verified that all of the pins were functioning. 
 
 Code:<br>
 ![Blink Code](Selection_002.png "Blink Code")
 
+Here's what the external LED looked like set up: <br>
 
-#### Let's Take This Outside
+![External LED](IMG_3192.JPG "External LED")
+
 
 #### Pass the Pot(entiometer)
 
