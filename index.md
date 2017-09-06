@@ -103,3 +103,5 @@ To make our robot perform an autonomous task, we basically created two Arduino p
 
 ### Conclusion
 In this lab, most of us got the chance to work with Arduino Uno and the Arduino IDE for the first time and constructed simple Arduino programs with extra components. We successfully assembled an autonomous robot that could perform simple tasks like driving a square path. This robot is not yet able to perform more intelligent actions like following a routine. With the help of sensors and more alogrithms, we will turn it into an intelligent system with the ability to react upon its environment in the future.
+
+![Robot](RobotCar.jpg "Robot")
