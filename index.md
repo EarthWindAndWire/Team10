@@ -20,10 +20,29 @@ The members of this group are bound by the [Team Contract](Contract.md).
 ## Lab 1: Microcontroller
 Lab 1 was most of the Team 10's first experience to robotics.
 ### The Goal
-In this lab,the team explored the various funtionalities of the Arduino Uno,eventually building up enough ability to construct a simple autonomous robot.
+
+The goal of this introductory lab section was to get familiarized with the different functionalities of the Arduino Uno and the Arduino IDE. Our team had the opportunity to construct a simple functional Arduino program using multiple external components and the Arduino Uno. Once we had this basic understanding, we proceeded to assembly the robot and made it perform an autonomous task such as driving a square path.
+
+#### Materials
+
+- 1 Arduino Uno
+- 1 USB A/B cable
+- 1 Continuous rotation servos
+- 1 Pushbutton
+- 1 LED (any color except IR!)
+- 1 Potentiometer
+- Several resistors (kΩ range)
+- 1 Solderless breadboard
+
 
 ### Blink
 This being the first time that most team members have experimented with an Arduino, we began by uploading and running the device'smost primitive sketch - "Blink".
+
+First, we ran the Blink sketch to verify that the Arduino board and internal LED were working. Then we modified the code to blink an external LED, and verified that all of the pins were functioning. 
+
+Code:
+![Blink code][https://github.com/EarthWindAndWire/Team10/blob/master/Selection_002.png]
+
 
 #### Let's Take This Outside
 
