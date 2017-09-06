@@ -61,19 +61,20 @@ Serial output from potentiometer code:<br>
 
 #### Modifications
 For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
-![Serial Monitor](SerialMonitor.png "Serial Monitor") 
-![Serial Monitor](SerialMonitor.png "Serial Monitor")
+![Circuit Image](IMG_3195.JPG "Circuit Image") 
+![Code](3195Code.png "Circuit Code")
 
 The PWM frequency of the LED was **490.2 Hz**
 
 Image:
-![Serial Monitor](SerialMonitor.png "Serial Monitor")
+![Freq](PWNFreq.png "PWN Frequency")
+
 ### Parallax Servos
 The purpose of this lab boils down to completing some autonomous task performed by a robot. Our robot will be moving in a simple pattern, requiring propulsion. In order to provide this, we will use Parallax Continuous Rotation Servos in tandem with the Arduino Servo.h library.
 
 The servo was attached to the previous potentiometer in order to have the speed at which the servo operates become dependent on its setting. The following code was then uploaded to the arduino:
 
-![Serial Monitor](SerialMonitor.png "Serial Monitor")
+![Servo Code](ServoCode.png "Servo Code")
 
 The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
 
@@ -83,4 +84,20 @@ alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
 
 ### Team 10 Does the Robot
 <br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=w1iMTuMnZG8&feature=youtu.be"><img src="http://img.youtube.com/vi/w1iMTuMnZG8&feature=youtu.be/0.jpg" 
-alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
+alt="Domo Origato" width="240" height="180" border="10" /></a>
+
+To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
+-Chassis
+-Screws
+-9V battery with clip
+-Ball bearing
+-2 wheels 
+-Allen key 
+
+![Robot in Pieces](whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png "Robot Parts")
+
+We started mounting the motors onto the motor brackets and then attaching them to the bottom part of the chassis. After this, we installed the wheels and placed the Arduino Uno and the 9V battery on the top side of the base plate. At first, we were using the breadboard for the circuit but we realized that it was better to connect the motors directly to the pins in the Arduino Uno. However, in the future we have to figure out a way to colocate the breadboard on the chassis since we will need it to connect other electrical components such as the sensors. 
+
+To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.  
+
+### Conclusion
