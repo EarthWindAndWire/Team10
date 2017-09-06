@@ -77,6 +77,10 @@ The servo was attached to the previous potentiometer in order to have the speed 
 
 The code takes the voltage input to the arduino (controlled by the potentiometer) and translates it into a direction and speed for the servo to turn.
 
-A video of the configuration in action can be found here <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be" target="_blank"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
+A video of the configuration in action can be found below<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=RKeNJGQvyiw&feature=youtu.be"><img src="http://img.youtube.com/vi/RKeNJGQvyiw&feature=youtu.be/0.jpg" 
 alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
+
+
 ### Team 10 Does the Robot
+<br> <a href="http://www.youtube.com/watch?feature=player_embedded&v=w1iMTuMnZG8&feature=youtu.be"><img src="http://img.youtube.com/vi/w1iMTuMnZG8&feature=youtu.be/0.jpg" 
+alt="Potentiate That Servo" width="240" height="180" border="10" /></a>
