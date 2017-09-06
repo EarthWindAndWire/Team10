@@ -41,7 +41,7 @@ This being the first time that most team members have experimented with an Ardui
 First, we ran the Blink sketch to verify that the Arduino board and internal LED were working. Then we modified the code to blink an external LED, and verified that all of the pins were functioning. 
 
 Code:<br>
-![Blink code](https://github.com/EarthWindAndWire/Team10/blob/master/Selection_002.png "Blink Code")
+![Blink Code](Selection_002.png "Blink Code")
 
 
 #### Let's Take This Outside
