@@ -42,7 +42,7 @@ Yixuan Wang <br>
 
 The members of this group are bound by the [Team Contract](labs/Contract.md).
 
-## Website Sections:
+## Website Sessions:
 
 [1. Milestones](documents/)  
 [2. Labs](labs/labsessions.md)
