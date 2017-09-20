@@ -1,3 +1,8 @@
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
+</head>
+
 <div class="menu">
   <a href="index.html" class="current">Home</a>
   <a href="about.html" class="drop-button">About</a>
