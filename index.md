@@ -37,7 +37,7 @@ Leandro Dorta Duque <br>
 Yixuan Wang <br>
 
 <div style="text-align: center">
-<img alt="Earth, Wind and Wire" src="images/IMG_4980.jpg"/>
+<img alt="Earth, Wind and Wire" src="IMG_4980.jpg"/>
 </div>
 
 The members of this group are bound by the [Team Contract](Contract.md).

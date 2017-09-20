@@ -182,5 +182,5 @@ To make our robot perform an autonomous task, we basically created two Arduino p
 
 ## Website Sessions:
 
-[1. Home](../index.md)  
-[2. Milestones](../)
+[1. Home](index.md)  
+[2. Milestones]()
