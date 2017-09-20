@@ -57,6 +57,27 @@ We also designed a band pass circuit to filter out frequencies below 500 Hz and 
 ![AmpAcoustic](AmpAcoustic.png "AmpAcoustic")
 
 
+### Part 3: Optical Team
+The objective of this part of the lab is to make our robot be able to detect a 7 kHz signal with an Arduino using the FFT library. 
+
+Materials used:
+
+- Arduino Uno
+- Breadboard
+- Multiple resistors (100Ω-8 ㏀ range)
+- Treasure 
+- IR receiver (NPN phototransistor)  
+- Op Amp (LM 358) 
+- Capacitor (3.3 nF)
+- Function generator
+- Oscilloscope
+
+For this part of the lab, we were assigned to build a circuit to detect electromagnetic radiation of infrared (IR) frequency. In order to achieve this functionality, we needed to use a phototransistor. A phototransistor is a light-sensitive transistor. The one we used in our lab is a photo-bipolar transistor, which is essentially a bipolar transistor encased in a transparent case so that light can reach the base-collector junction. The more light the phototransistor receives, the more current it lets pass. You can see a picture of our phototransistor below.
+
+![IRSensor](IRSensor.png "IRSensor")
+
+We used a treasure as the transmitter of the IR signal. We first had to make sure our treasure was in fact transmitting at 7 kHz of frequency. Therefore, we tested it using the oscilloscope and adjusted the frequency of the signal through one of the potentiometers embedded in the treasure.   
+
 
 
 
