@@ -6,4 +6,4 @@
 ## Website Sessions:
 
 [1. Home](index.md)  
-[2. Milestones]()
+[2. Milestones](milestones.md)
