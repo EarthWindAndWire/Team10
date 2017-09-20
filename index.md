@@ -2,7 +2,7 @@
 <head>
     <title>Earth Wind and Wire</title>
     <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
-    <link rel="icon" href="images/RobotCar.jpg"> 
+    <link rel="icon" href="RobotCar.jpg"> 
 </head>
 
 <!--<div class="menu">
@@ -25,7 +25,7 @@ We're Team 10, better known as **Earth Wind, and Wire**.
 
 This team is a part of The ECE 3400 Lab Section 404 at Cornell University.
 
-See how we're spending time on our [Team Minutes Page](documents/Mnutes.md)
+See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
 
 ##### Members: <br>
@@ -40,9 +40,9 @@ Yixuan Wang <br>
 <img alt="Earth, Wind and Wire" src="images/IMG_4980.jpg"/>
 </div>
 
-The members of this group are bound by the [Team Contract](labs/Contract.md).
+The members of this group are bound by the [Team Contract](Contract.md).
 
 ## Website Sessions:
 
-[1. Milestones](documents/)  
-[2. Labs](labs/labsessions.md)
+[1. Milestones]()  
+[2. Labs](labsessions.md)
