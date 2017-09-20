@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Lab 2: Analog Circuitry and FFTs
 
 ## Objective
