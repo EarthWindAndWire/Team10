@@ -5,7 +5,7 @@
     <link rel="icon" href="images/RobotCar.jpg"> 
 </head>
 
-<div class="menu">
+<!--<div class="menu">
   <a href="index.html" class="current">Home</a>
   <a href="about.html" class="drop-button">About</a>
     <div class="drop-menu">
@@ -17,7 +17,7 @@
   <a href="assignments.html">Assignments</a>
   <a href="tutorials.html">Tutorials</a>
   <a href="contact.html">Contact</a>
-</div>
+</div> -->
 
 ## About Us
 
@@ -44,5 +44,5 @@ The members of this group are bound by the [Team Contract](Contract.md).
 
 ## Website Sections:
 
-[1. Milestones](documents/)
+[1. Milestones](documents/)  
 [2. Labs](labs/labsessions.md)
