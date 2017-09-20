@@ -28,3 +28,37 @@ odd bins are excluded). The program then processes the data in the fft and sends
 Each bin represents a frequency range, determined by the ADC clock frequency.
 
 To verify that the library was working as expected, we hooked our adc up to a function generator and tested it using a 10 kHz signal.
+
+![10kHz](10kHz.png "10kHz")
+
+The peak occurs at bin 68, pretty close to the expected bin of 66. Our prescaler was set to 32, giving us an ADC clock frequency of 500  kHz (16 MHz/ 32), and a sampling frequency of 500kHz/13 = 38 kHz. Each bin is about 150 Hz wide, and 10k/150 = 66.
+
+
+### Part 2: Acoustic Team
+The microphones we used came with a built in circuit, show below.
+
+![AcousticCircuit](AcousticCircuit.png "AcousticCircuit")
+
+To test the microphone, we hooked it up to an oscilloscope and used an app to generate a 660 Hz tone. The output was a ~612 Hz sinusoid with a ~1 V peak to peak amplitude. 
+
+![660Hz](660Hz.png "660Hz")
+
+Since we only needed to detect a 660 Hz tone, we can use a smaller sampling frequency. We modified the sample code, setting the prescaler to 64. 
+
+![AcousticCode](AcousticCode.png "AcousticCode")
+
+With this sampling frequency, we would expect to see peaks for 585 Hz, 660 Hz, and 735 Hz signals in bins 7, 8, and 9, respectively.
+
+![FFTAcoustic](FFTAcoustic.png "FFTAcoustic")
+
+The peaks were actually in bins 5, 6, and 7 respectively. This could potentially be due to inaccuracies in our tone generator.
+We also designed a band pass circuit to filter out frequencies below 500 Hz and above 800 Hz, but didn’t think it would be necessary during the competition, since the FFT algorithm neatly sorts the frequencies for us.
+
+![AmpAcoustic](AmpAcoustic.png "AmpAcoustic")
+
+
+
+
+
+
+
