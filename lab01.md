@@ -151,13 +151,14 @@ A video of the configuration in action can be found here [ https://youtu.be/RKeN
 
 Robot video -> https://www.youtube.com/watch?v=w1iMTuMnZG8&feature=youtu.be 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8?rel=0" frameborder="0" allowfullscreen></iframe>
-To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
-Chassis
-Screws
-9V battery with clip
-Ball bearing
-2 wheels 
-Allen key 
+To wrap up this lab, we began assembling our robot. For this part, we used the following materials:<br>
+
+Chassis<br>
+Screws<br>
+9V battery with clip<br>
+Ball bearing<br>
+2 wheels <br>
+Allen key <br>
 
 
 Some of the materials we used in the assembly of the robot
