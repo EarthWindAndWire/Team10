@@ -1,6 +1,8 @@
 
 <head>
+    <title>Earth Wind and Wire</title>
     <link rel="stylesheet" type="text/css" href="style/all.css" media="all"/>
+    <link rel="icon" href="images/RobotCar.jpg"> 
 </head>
 
 <div class="menu">
