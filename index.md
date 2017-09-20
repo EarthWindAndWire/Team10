@@ -36,9 +36,11 @@ Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
 Yixuan Wang <br>
 
-<div style="text-align: center">
+![Earth, Wind and Wire](IMG_4980.jpg)
+
+<!--<div style="text-align: center">
 <img alt="Earth, Wind and Wire" src="IMG_4980.jpg"/>
-</div>
+</div> -->
 
 The members of this group are bound by the [Team Contract](Contract.md).
 
