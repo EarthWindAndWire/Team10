@@ -92,5 +92,5 @@ To make our robot perform an autonomous task, we basically created two Arduino p
 ## Website Sections:
  
 ![Robot](RobotCar.jpg "Robot")
-[1. Milestones](documents/)
-[2. Labs](labs/labsessions.md)
+[1. Milestones](documents/) <br>
+[2. Labs](labs/labsessions.md) <br>
