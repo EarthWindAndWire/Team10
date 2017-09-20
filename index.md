@@ -1,4 +1,4 @@
-<div class="top-navbar">
+<div class="menu">
   <a href="index.html" class="current">Home</a>
   <a href="about.html" class="drop-button">About</a>
     <div class="drop-menu">
@@ -20,9 +20,6 @@ This team is a part of The ECE 3400 Lab Section 404 at Cornell University.
 
 See how we're spending time on our [Team Minutes Page](Mnutes.md)
 
-<div style="text-align: center">
-<img alt="Earth, Wind and Wire" src="images/IMG_4980.jpg"/>
-</div>
 
 ##### Members: <br>
 Maria Bobbett <br>
@@ -31,6 +28,10 @@ Tejas Advait <br>
 Jennifer Fuhrer <br>
 Leandro Dorta Duque <br>
 Yixuan Wang <br>
+
+<div style="text-align: center">
+<img alt="Earth, Wind and Wire" src="images/IMG_4980.jpg"/>
+</div>
 
 The members of this group are bound by the [Team Contract](Contract.md).
 
