@@ -38,7 +38,7 @@ void loop() {
 }
 
 External LED circuit image:
-![External LED](images/IMG_3192.JPG)
+![External LED](../images/IMG_3192.JPG)
 
 
 
@@ -73,7 +73,7 @@ void loop() {
 For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
 
 Circuit image:
-![Circuit](images/IMG_3195.JPG)
+![Circuit](../images/IMG_3195.JPG)
 
 
 
@@ -100,7 +100,7 @@ void loop() {
 
 The PWM frequency of the LED was 490.2 Hz.
 
-![PWM frequency](images/PWNFreq.png)
+![PWM frequency](../images/PWNFreq.png)
 
 
 
@@ -144,10 +144,13 @@ The code takes the voltage input to the arduino (controlled by the potentiometer
 
 A video of the configuration in action can be found here [ https://youtu.be/RKeNJGQvyiw ]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RKeNJGQvyiw?rel=0" frameborder="0" allowfullscreen></iframe>
+
 
 ## Part 4: Robot
 
 Robot video -> https://www.youtube.com/watch?v=w1iMTuMnZG8&feature=youtu.be 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w1iMTuMnZG8?rel=0" frameborder="0" allowfullscreen></iframe>
 To wrap up this lab, we began assembling our robot. For this part, we used the following materials:
 Chassis
 Screws
@@ -163,6 +166,17 @@ Some of the materials we used in the assembly of the robot
 
 We started mounting the motors onto the motor brackets and then attaching them to the bottom part of the chassis. After this, we installed the wheels and placed the Arduino Uno and the 9V battery on the top side of the base plate. At first, we were using the breadboard for the circuit but we realized that it was better to connect the motors directly to the pins in the Arduino Uno. However, in the future we have to figure out a way to colocate the breadboard on the chassis since we will need it to connect other electrical components such as the sensors. 
 
-To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.  
+To make our robot perform an autonomous task, we basically created two Arduino programs: the first one made the robot drive in a straight line and the second one offered it the capacity to trace a square pattern. Although these behaviors can be considered as autonomous, they do not make our robot an “intelligent physical system” yet. As we advance with the lab sections and we start adding some sensors to our robot, it will progressively gain the capacity to interact with the environment, what will make it more intelligent.
 
-Conclusions
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PooEK1s3c94?rel=0" frameborder="0" allowfullscreen></iframe>
+
+## Conclusions
+
+
+
+![Robot](../images/RobotCar.jpg)
+
+## Website Sessions:
+
+[1. Home](../index.md)  
+[2. Milestones](../)
