@@ -38,7 +38,7 @@ void loop() {
 }
 
 External LED circuit image:
-![External LED](../images/IMG_3192.JPG)
+![External LED](IMG_3192.JPG)
 
 
 
@@ -73,7 +73,7 @@ void loop() {
 For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
 
 Circuit image:
-![Circuit](../images/IMG_3195.JPG)
+![Circuit](IMG_3195.JPG)
 
 
 
@@ -100,7 +100,7 @@ void loop() {
 
 The PWM frequency of the LED was 490.2 Hz.
 
-![PWM frequency](../images/PWNFreq.png)
+![PWM frequency](PWNFreq.png)
 
 
 
@@ -163,7 +163,7 @@ Allen key
 Some of the materials we used in the assembly of the robot
 
 
-![Materials](../images/whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png)
+![Materials](whenAMommyRobotAndADaddyRobotLoveEachOtherVeryMuch.png)
 
 
 
@@ -177,7 +177,7 @@ To make our robot perform an autonomous task, we basically created two Arduino p
 
 
 
-![Robot](../images/RobotCar.jpg)
+![Robot](RobotCar.jpg)
 
 ## Website Sessions:
 

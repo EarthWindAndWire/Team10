@@ -5,5 +5,5 @@
 
 ## Website Sessions:
 
-[1. Home](../index.md)  
-[2. Milestones](../)
+[1. Home](index.md)  
+[2. Milestones]()
