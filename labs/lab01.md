@@ -38,11 +38,11 @@ void loop() {
 }
 
 External LED circuit image:
-![External LED] (images/IMG_3192.JPG)
+![External LED](images/IMG_3192.JPG)
 
 
 
-Part 2: Analog Voltage and LED Output
+## Part 2: Analog Voltage and LED Output
 
 For the first step of this part, we built a voltage divider circuit using a potentiometer. We then output the analog voltage values controlled by the potentiometer to the serial monitor.
 
@@ -72,7 +72,8 @@ void loop() {
 
 For the second half of this part, we modified the circuit and the code to do an analog to analog conversion so that the brightness of the LED varied linearly with the input voltage. 
 
-Circuit image: IMG_3195.JPG
+Circuit image:
+![Circuit](images/IMG_3195.JPG)
 
 
 
@@ -99,7 +100,7 @@ void loop() {
 
 The PWM frequency of the LED was 490.2 Hz.
 
-Image:
+![PWM frequency](images/PWNFreq.png)
 
 
 
