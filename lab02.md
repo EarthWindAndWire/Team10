@@ -35,6 +35,9 @@ The peak occurs at bin 68, pretty close to the expected bin of 66. Our prescaler
 
 
 ### Part 2: Acoustic Team
+
+Our robot will be signalled to begin its line following procedure (for more datails see [Lab 1](lab01.md)) by a 660 Hz sound frequency. To do this, we will install a microphone onto our device and use the earlier mentioned FFT library to pick out this desired frequency. <br>
+
 The microphones we used came with a built in circuit, show below.
 
 ![AcousticCircuit](AcousticCircuit.png "AcousticCircuit")
