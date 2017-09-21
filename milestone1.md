@@ -1,4 +1,4 @@
-## Lab 1: Figuring Out Figure 8s
+## Milestone 1: Figuring Out Figure 8s
 Lab 1 was most of the Team 10 members' first experience with robotics.
 ### The Goal
 
@@ -18,6 +18,11 @@ For Milestone 1, we have two primary objectives:
 
 
 ### Line Follower
+Since our servo motors were calibrated fairly well in Lab, our robot moves in a straight line on the grid, with minimum need for correction.
+We attach two sensor at the front of the robot (from Lab 1) as shown below<br>
+
+
+
 
 
 
