@@ -46,17 +46,54 @@ And here’s the video of our line follower robot:<br>
 
 ### Figure Eight
 
+The diagram below depicts how we want our robot to move.<br>
 
+![Nice 8 buddy](figure8.png)<br>
+
+The number on the arrows indicate the path of the robot, i.e, “1” is the first movement followed by “2” and so on. The circle represents the robot and its starting position. The flat end represent the front side of the robot.
+Now this task requires us to tackle two challenges: detecting an intersection and making a right angled turn, either to the left or to the right. Once these two challenges are tackled, we can program the robot to drive in any pattern on the grid.
+The first challenge can easily be solved by using the existing two sensors. When both the two sensors detect black, then this corresponds to an intersection. Once the robot arrives at an intersection, it has to decide whether to go right, left or forward. The code for going forward is trivial; however the code for making a right/left turn is a challenge. We tackle this challenge in the following way:<br>
+
+1. Once the robot arrives at an intersection, it makes an initial small turn in the desired direction (right/left) using differential drive, for a small time t0. Within time t0, the robot doesn’t complete its right angle turn, but covers only a small angle.
+
+2. Once the small turn is over, the line sensors have been displaced from their initial position, i.e, they are no longer on top of the intersection. The robot now turns in the same direction until the sensors detect an intersection.
+
+In this way, the robot completes its right angled turn in the desired direction. The time t0 doesn’t really depend on the speed of the motors since the function of the small turn is simply to displace the sensors from their initial position. For our robot, we set t0 = 400ms. As mentioned earlier, since our robot moves in a straight line due to the calibration of servo motors in Lab 1, an accurate right angled turn can be completed with the help of the two existing sensors. <br>
+
+Now the Arduino board can be coded in order to carry out the figure eight movement of the robot easily by indicating the robot’s movement command (forward/left/right) for the next intersection.<br>
+
+The following code is used for making a right angled turn (called hard turn in the code).<br>
+
+![Code](code snippet 3.PNG)
+
+Now, we can combine our code to tell the robot to go
+1. Forward
+2. Right
+3. Right
+4. Right
+5. Forward
+6. Left
+7. Left
+8. Left
+<br>
+Also, obviously the robot is following the line all the while.<br>
+And here’s the video of the robot moving in a figure eight: <br>
+
+<iframe width="560" height="315" src="https://youtu.be/MaJhGQ_WBlU" frameborder="0" allowfullscreen></iframe>
 
 
 ### Future Possible Modifications / Notes
 - We can possibly incorporate a four sensor arrangement for better control; however, our current iteration works well
 - If there is a change in the chassis, the threshold values for the line sensors have to be tested again
-
+- We will work on a voltage isolator circuit in order to provide separate power supplies to the Arduino Board, line sensors, and servo motors.<br>
 
 
 ### Conclusion
-We successfully added line following functionality to our robot from Lab 1. Building further on the line follower robot, we added the functionality of making right angled turns. Using line following and the ability to make right angled turns, we further programmed the robot to move in a figure eight
+We successfully added line following functionality to our robot from Lab 1. Building further on the line follower robot, we added the functionality of making right angled turns. Using line following and the ability to make right angled turns, we further programmed the robot to move in a figure eight<br>
+
+### Challenges
+Sometimes the Arduino resets in between the run. We suspect this happens because of too much current drawn by the line sensors and the servo motors from the Arduino board. Hence, we are exploring ways of isolating voltage. <br>
+
  
 [1. Milestones](documents/) <br>
 [2. Labs](labs/labsessions.md) <br>
