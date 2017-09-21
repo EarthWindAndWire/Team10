@@ -1,5 +1,4 @@
 ## Milestone 1: Figuring Out Figure 8s
-Lab 1 was most of the Team 10 members' first experience with robotics.
 ### The Goal
 
 For Milestone 1, we have two primary objectives:
