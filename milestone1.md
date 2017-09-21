@@ -39,8 +39,7 @@ The following code explains the logic for line following in terms of code <br>
 
 And here’s the video of our line follower robot:<br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=UeX_rniHqjw&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MaJhGQ_WBlU" frameborder="0" allowfullscreen></iframe>
 
 ### Figure Eight
 
@@ -77,8 +76,7 @@ Now, we can combine our code to tell the robot to go
 Also, obviously the robot is following the line all the while.<br>
 And here’s the video of the robot moving in a figure eight: <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=MaJhGQ_WBlU" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MaJhGQ_WBlU" frameborder="0" allowfullscreen></iframe>
 
 ### Future Possible Modifications / Notes
 - We can possibly incorporate a four sensor arrangement for better control; however, our current iteration works well
