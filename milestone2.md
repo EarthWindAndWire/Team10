@@ -28,7 +28,7 @@ To confirm our result, we also used the function generator to generator 12kHz an
 
 From the above results, we wrote a simple algorithm to classify the FFT results. We used an else-if statement in case that small peaks might lead confusion to the result.
 
-![TreasureCode](TreasureCode.png "TreasureCode")
+![TreasureCode](treasureCode.jpg "Arrrr")
 
 As we can see from the above graphs, it might be helpful to add an analog filter to the circuit in the future. This would be helpful to filter low frequency noises, and enable the FFT to focus on the signal from the IR sensors. 
 
