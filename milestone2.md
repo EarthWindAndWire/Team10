@@ -10,24 +10,24 @@ The purpose of this part of Milestone 2 is an to extend the range of frequencies
 Based on our code and the testing frequency, we can figure out right bins to check for in the FFT results, which are also the bins where the highest peaks occur. 
 For the 7kHz testing frequency, the highest peaks occurs at bin 46-48. 
 
-![7kHz](7kHz 7kHz.png)
+![7kHz](7kHz.png "7kHz")
 
 For the 12kHz testing frequency, the highest peaks occurs at bin 79-81.
 
-![12kHz](12kHz 12kHz.png)
+![12kHz](12kHz.png "12kHz")
 
 For the 17kHz testing frequency, the highest peaks occurs at bin 116-117.
 
-![17kHz](17kHz 17kHz.png)
+![17kHz](17kHz.png "17kHz")
 
 To confirm our result, we also used the function generator to generator 12kHz and 17kHz sine frequencies like we did for the 7kHz frequency in lab2, and these are the result we had. 
 
-![12kFG](12kFG 12kFG.png)
+![12kFG](12kFG.png "12kFG")
 
-![17kFG](17kFG 17kFG.png)
+![17kFG](17kFG.png "17kFG")
 
 From the above results, we wrote a simple algorithm to classify the FFT results. We used an else-if statement in case that small peaks might lead confusion to the result.
 
-![TreasureCode](TreasureCode TreasureCode.png)
+![TreasureCode](TreasureCode.png "TreasureCode")
 
 As we can see from the above graphs, it might be helpful to add an analog filter to the circuit in the future. This would be helpful to filter low frequency noises, and enable the FFT to focus on the signal from the IR sensors. 
