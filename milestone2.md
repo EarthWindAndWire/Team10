@@ -31,3 +31,11 @@ From the above results, we wrote a simple algorithm to classify the FFT results.
 ![TreasureCode](TreasureCode.png "TreasureCode")
 
 As we can see from the above graphs, it might be helpful to add an analog filter to the circuit in the future. This would be helpful to filter low frequency noises, and enable the FFT to focus on the signal from the IR sensors. 
+
+
+
+### Wall Detection
+For wall detection, we mounted an IR short-range distance sensor to our robot. We took the analog output from the sensor and determined a threshold value at which the robot would recognize that it was in front of a wall. For the purpose of this milestone, we  just had the robot stop once it got close enough to the wall.
+
+Code snippet:
+
