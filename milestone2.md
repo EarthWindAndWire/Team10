@@ -32,6 +32,8 @@ From the above results, we wrote a simple algorithm to classify the FFT results.
 
 As we can see from the above graphs, it might be helpful to add an analog filter to the circuit in the future. This would be helpful to filter low frequency noises, and enable the FFT to focus on the signal from the IR sensors. 
 
+Below is a video showing our results:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YVQM5f7yCRE" frameborder="0" allowfullscreen></iframe>
 
 
 ### Wall Detection
