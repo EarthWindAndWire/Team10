@@ -42,4 +42,5 @@ For wall detection, we mounted an IR short-range distance sensor to our robot. W
 Code snippet:
 ![CodeSnippet](Milestone2WallDetectioCodePic.PNG "Good Code")
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YqIe92OuLtM" frameborder="0" allowfullscreen></iframe>
+And a video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bVS3Tqpj4TI" frameborder="0" allowfullscreen></iframe>
