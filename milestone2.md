@@ -38,6 +38,6 @@ As we can see from the above graphs, it might be helpful to add an analog filter
 For wall detection, we mounted an IR short-range distance sensor to our robot. We took the analog output from the sensor and determined a threshold value at which the robot would recognize that it was in front of a wall. For the purpose of this milestone, we  just had the robot stop once it got close enough to the wall.
 
 Code snippet:
-![CodeSnippet](Milestone2WallDetectionCodePic.PNG "Maria's Code on Point")
+![CodeSnippet](Milestone2WallDetectioCodePic.PNG "Good Code")
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YqIe92OuLtM" frameborder="0" allowfullscreen></iframe>
