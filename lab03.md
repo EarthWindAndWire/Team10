@@ -31,7 +31,7 @@ Red and Green Branches Voltage Divider
 
 ![RGB Voltage Divider](RGB_Voltage_Divider.png "RGB Voltage Divider")
 
-Blue Branch Voltage Divider
+\n\t\t Blue Branch Voltage Divider
 
 ![Blue Branch Voltage Divider](Blue_Branch_Voltage_Divider.png "Blue Branch Voltage Divider")
 
