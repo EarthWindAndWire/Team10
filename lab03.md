@@ -184,11 +184,11 @@ After we were able to create a sine wave with a singular frequency, we worked to
 
 For our first iteration we measured the frequencies with the oscilloscope then played a 3 tone sample. Examples of those can be found here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=5Hot30vIp_Y&feature=youtu.be" frameborder="0" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5Hot30vIp_Y" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=E3a1a_DGvQ4&feature=youtu.be" frameborder="0" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E3a1a_DGvQ4" frameborder="0" allowfullscreen></iframe> 
 
+### The MJ Cover the World Has Been Waiting F0r
 We were able to play a short part of a song (I Don’t F*CK WITH YOU by Big Sean) with 16 states. A video example can be found here:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XVi_11WXyCY" frameborder="0" allowfullscreen></iframe>  
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XVi_11WXyCY" frameborder="0" allowfullscreen></iframe>
