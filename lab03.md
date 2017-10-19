@@ -188,7 +188,7 @@ For our first iteration we measured the frequencies with the oscilloscope then p
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3a1a_DGvQ4" frameborder="0" allowfullscreen></iframe> 
 
-### The MJ Cover the World Has Been Waiting F0r
+### The MJ Cover the World Has Been Waiting For
 We were able to play a short part of a song (I Don’t F*CK WITH YOU by Big Sean) with 16 states. A video example can be found here:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XVi_11WXyCY" frameborder="0" allowfullscreen></iframe>
