@@ -75,11 +75,17 @@ At first sight, we can notice that each value of resistance for each bit is grea
 As we can see, the voltage values are between 0 and 1V. Therefore, the values for the resistors are correctly chosen as we analyzed before. 
 
 ####  Drawing One Box On The Screen
-	Once we understood how the VGA connector worked, we hooked up our FPGA and uploaded the template code. We first set the screen color to purple.
+Once we understood how the VGA connector worked, we hooked up our FPGA and uploaded the template code. We first set the screen color to purple.
+
  ![Box](onebox.PNG "What were you expcting?")
+ 
 Once we successfully set the screen color, we wrote code to draw an Italian flag in the center of the screen.
+
  ![Italian Code](italianflagcode.PNG "01001111 01001101 01000111")
+ 
  ![Italian Flag](italianflag.PNG "Figlio di puttana!")
+ 
+ 
  
 ### Reading external inputs to the FPGA
 #### Correctly updating a 4-bit array dependent on the inputs
@@ -90,6 +96,7 @@ In this part of the lab, we connect two external switches to the Arduino Uno and
  The Arduino output signal is of 5V and the input signal that the FPGA receives is of 3.3V. Therefore, we must step down the signal from the Arduino before connecting it to the FPGA. To achieve this, we use a voltage divider using the values of 1kΩ and 500Ω. 
  
  ![Vout](VoutFormula.PNG "No explosiions here")
+ 
 Once we have the appropriate Arduino outputs set up, we can connect them to the GPIO pins in the FPGA. Our FPGA will update the configuration of colors according to the values obtained from the Arduino which indicates the states of the switches. We establish the relations as follow: 
 The values for each quadrant correspond to the combination of Switch_1 Switch_2. For example, in order to highlight the top right corner, Switch_1 = 0 and Switch_2 = 1.
 
