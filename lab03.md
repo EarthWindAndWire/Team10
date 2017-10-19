@@ -31,7 +31,7 @@ Red and Green Branches Voltage Divider
 
 ![RGB Voltage Divider](RGB_Voltage_Divider.png "RGB Voltage Divider")
 
-\n\t\t Blue Branch Voltage Divider
+ Blue Branch Voltage Divider
 
 ![Blue Branch Voltage Divider](Blue_Branch_Voltage_Divider.png "Blue Branch Voltage Divider")
 
@@ -60,19 +60,18 @@ The following table resumes the obtained results:
 These values correspond to the minimum resistance that we need for each bit in its corresponding branch in order to obtain 1V as the maximum voltage for the output of the VGA connector (and the input of the VGA cable). If we use lower values of resistance, the signal will be able to reach values greater than 1V which can be problematic for our VGA monitor. However, we can use higher values of resistance as long as the value for the output signal is between 0 and 1V. Now, let’s analyze the values of the resistors of our VGA connector to see if they meet the requirements: each resistor is approximately doubling the value of its previous bit’s resistance and the value of the final output is between 0 and 1V. 
 
 ![Resistor](resistorschematic.PNG "ResistorsSchematic")
-\n
-\n
+
 And here is a picture of the VGA connector we use:
 ![VGA Connector](VGAconnector.PNG "VGA All Day")
-\n
+
 These are the corresponding values:
-\n
+
 ![Table4](Table4.PNG "RRRGGGBB")
-\n
+
 At first sight, we can notice that each value of resistance for each bit is greater than its corresponding in the analysis we did before. Also, they meet the requirement that each value is approximately doubling the value of the previous bit. Let’s make the calculations to see if the values of the output signals oscillate between 0 and 1 V. 
-\n
+
 ![Table5](Table5.PNG "You can't resist")
-\n
+
 As we can see, the voltage values are between 0 and 1V. Therefore, the values for the resistors are correctly chosen as we analyzed before. 
 
 ####  Drawing One Box On The Screen
@@ -85,30 +84,30 @@ Once we successfully set the screen color, we wrote code to draw an Italian flag
 ### Reading external inputs to the FPGA
 #### Correctly updating a 4-bit array dependent on the inputs
 In this part of the lab, we connect two external switches to the Arduino Uno and connect the Arduino to the FPGA. The plan is to establish the communication between the Arduino and the FPGA, so the Arduino process the maze information and sends the signal to the FPGA which portrays it into the VGA screen. We connect the two switches to two analog pins in the Arduino in order to read their outputs. Then, the Arduino will send two digital signals (each corresponding to each switch) to indicate if the switch is on or off. Then, the FPGA will output the corresponding graphics for each case. The following corresponds to our Arduino code:
- \n
+ 
  ![4bitarraycode](4bitarraycode.PNG "Code")
- \n
+ 
  The Arduino output signal is of 5V and the input signal that the FPGA receives is of 3.3V. Therefore, we must step down the signal from the Arduino before connecting it to the FPGA. To achieve this, we use a voltage divider using the values of 1kΩ and 500Ω. 
- \n
+ 
  ![Vout](VoutFormula.PNG "No explosiions here")
 Once we have the appropriate Arduino outputs set up, we can connect them to the GPIO pins in the FPGA. Our FPGA will update the configuration of colors according to the values obtained from the Arduino which indicates the states of the switches. We establish the relations as follow: 
 The values for each quadrant correspond to the combination of Switch_1 Switch_2. For example, in order to highlight the top right corner, Switch_1 = 0 and Switch_2 = 1.
-\n
+
 ![Switch Table](switchtable.PNG "switchy switch")
-\n
+
 ![Switch Circuit](switchcircuit.PNG "switchy switchy switch")
-\n
+
 The connection between the switches, the Arduino and the FPGA where you can also see the voltage divider utilized.
 The graphics our code portrays on the screen corresponds to a white square which is divided in the four quadrants described above. The selected quadrant according to the values of the switch becomes red, and the rest of the screen  is black. The following corresponds to the code to achieve this functionality: 
-\n
+
 ![Graphics Verilog](graphicsverilog.PNG "Verilog's never gonna give you up, Verilog's never gonna let you downnn")
-\n
+
 This portion of code updates the color for the next pixel location accordingly. As we want to create a 100-by-100 px square, we establish that any pixel location greater than that will be colored black. Then, if the pixel is within that area, it will receive its color according to the mapping we establish which is described in the next section. 
-\n
+
 #### Mapping external inputs to four different outputs on the screen
 The following fragment of code shows how we map external inputs to four different outputs. The external inputs, which correspond to the values of the switches are stored by the variables switch_1 and switch_2. Also, we create a grid that (4-bit array) to map each quadrant to its corresponding color according to each situation. We can follow the code to see that it follows the idea we described before about how the relation between the switches and the highlighted quadrant is. 
-\n
+
 ![Verilog Code](exinputsverilog.PNG "Verilog's never gonna run around and desertt youuuu")
-\n
+
 In the following video, we can see how our code successfully works: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PbsCtGimTn4" frameborder="0" allowfullscreen></iframe>
