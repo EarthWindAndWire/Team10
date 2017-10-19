@@ -74,16 +74,17 @@ At first sight, we can notice that each value of resistance for each bit is grea
 
 As we can see, the voltage values are between 0 and 1V. Therefore, the values for the resistors are correctly chosen as we analyzed before. 
 
-####  Drawing One Box On The Screen
+###  Drawing One Box On The Screen
+
 Once we understood how the VGA connector worked, we hooked up our FPGA and uploaded the template code. We first set the screen color to purple.
 
- ![Box](onebox.PNG "What were you expcting?")
+![oneboximage](onebox.PNG "What were you expcting?")
  
 Once we successfully set the screen color, we wrote code to draw an Italian flag in the center of the screen.
 
- ![Italian Code](italianflagcode.PNG "01001111 01001101 01000111")
+![Italian Code](italianflagcode.PNG "01001111 01001101 01000111")
  
- ![Italian Flag](italianflag.PNG "Figlio di puttana!")
+![Italian Flag](italianflag.PNG "Figlio di puttana!")
  
  
  
