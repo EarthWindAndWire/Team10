@@ -43,12 +43,9 @@ Before we could implement wireless communication, we needed a reliable scheme of
 
 The radio team decided we would need to transmit 8-bit packages between the boards, 3 bits for the x coordinates, 2 bits for the y coordinates, and 3 for the state of the robot and treasure detection. This meant we had to use 8 pins on both boards. We used 0-7 on the Arduino and GPIO_0_D 10-17 for the FPGA. In addition, we needed to create voltage dividers for each pin because the Arduino outputs 5V, but the FPGA inputs up to 3.3V. Using two resistors, one 328 ohms and the other about 177 ohms, we pulled the voltage down outputted by the Arduino to 1.76 volts (when measured on the oscilloscope). 
 
-(Insert Picture)
+![Wiring](ParallelCommunicationwithVoltageDivider.PNG "Who knew the FPGA could rock dreads")
 
-Parallel Communication with Voltage dividers
-
-(Insert Picture)
-
+![Oscilliscope Image](lab4VGA.PNG "Come back!")
 
 CH1 is a reading from pin 7 on the Arduino when the program is finished (for the MSB of the x coordinate which is reading 4 or 100)
 
@@ -56,10 +53,16 @@ Once all the inputs and outputs were safely wired up on a breadboard, we wrote c
 
 To transmit this information, the Arduino used pins 3 and 4 for the y values (3 LSB, 4 MSB) and 5-7 for the x values (5 LSB, 7 MSB). These were connected to the FPGA GPIO_0_D[14:13] and GPIO_0_D[12:10] respectively. 
 
+![Arduino Image](Lab4VGAArduinoCode.PNG "Good Code")
+
 Once the information was inputted into these pins, the FPGA reads the numbers as xcoord and ycoord. These values are combined into a single five bit address to be evaluated in a case statement to check whether the robot is currently on this coordinate. Once the robot reaches this coordinate, and subsequent address, the corresponding grid turns red and changes a state bit to 1, meaning the robot has already visited this location. The state variable is a 4x5 matrix, with one bit for each grid square. A 0 indicates the robot hasn’t visited that location and a 1 indicates it has. As previously described, once a robot goes to a location, it flips the state bit to 1. Once this state bit is changed, several if statements evaluate this state bit before the case statement. If the state bit is 0, the grid square is white, if it is 1 then the grid square is green.
+
+![Verilog Code](Lab4VGAVerilogCode.PNG "Not as good code")
 
 With this logic, a red square should travel through the grid in a zigzag pattern, turning all the originally white squares to green as it goes along. However, we had several issues implementing the Verilog code which resulted in undesired outputs. Initially, all our entire grid was initialized green despite us only inputting a single positional value of x=0 and y=0. In addition, if we removed the if statements that evaluated the state, the entire grid would turn red. At this point, we realised this issue is probably with the implementation of address.
 
 Upon advisement, we added a default case to our case statement. However, our single positional value of x=0 and y=0 would still not trigger the desired outcome. The entire grid was white instead. At the present moment, we are still are having problems displaying the correct inputs so we were unable to get past this incorrectly colored maze. Unfortunately we are still in a state of debugging because we are unsure of the exact problem plaguing our code.
 
+![Our First Issue](Lab4VGAFirstIssue.PNG "Wah wah wah")
+![Is this a solution](Lab4VGAInitialSolution.PNG "We're still workin on it")
 
