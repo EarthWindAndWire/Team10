@@ -13,16 +13,50 @@ Maria Bobbett, Leandro Dorta Duque, Tejas Advait
  - 2 radio breakout boards with headers
  
  #### Getting Started 
+ 
+![Arduino Image](whatanicearduino.PNG "Arduino and transceiver connection")
+ 
 First we downloaded and installed the RF24 Arduino library required to work with the transceiver. The transceivers were soldered apart from the 3.3V supply wire. We soldered the wire and connected the transceiver as shown in figure 1. We also used two different laptops to test and program the sender and the receiver Arduino board.
 Next we downloaded the getting started sketch from ECE 3400 lab repository and modified the identifier number for two pipes according to our team number and lab day. 
 2*(3D+N) + X ---> 2*(3*2 + 10) + X [D = 2 for Wed Night, N = 10 for team number 10 and X is 0 for one Arduino and 1 for the other]. We get 32 (20 in hex) and 33 (21 in hex)
 // Radio pipe addresses for the 2 nodes to communicate.
 const uint64_t pipes[2] = { 0x0000000020LL, 0x0000000021LL };
  
+![Serial Monitor Image](whataniceserialmonitor.jpg "Serial monitor for initial test")
 
+#### Sending the entire maze wirelessly 
+For this part of the lab, we have to be able to send the entire maze wirelessly from one Arduino to the other. In order to achieve this functionality, we first need to define what the information would be for our maze. We use a 4x5 matrix (two dimensional array) to represent the maze where the state of each box is represented by an integer (in this case, the integers are considered unsigned characters, so they count 1 byte each). We have to make sure that our maze (2-dimensional array) can be sent in a single payload. Since the default size of a payload is 32 bytes and our array contains 20 bytes (20 unsigned characters), we are able to send the entire maze in one payload. 
+The following is an example of the code we use to represent the maze (the number for the states are randomly picked, their real values depend on the states we decide to use for each box in the maze). 
 
+![Maze Array](whatanicemazearray.PNG "It's no labyrinth but it does the job")
 
+We include the following code in order to send the maze from the transceiver Arduino to the receiver one and to receive the acknowledgement from the receiver to the transceiver to indicate the information was successfully received.
 
+![Reception](whatanicereception.PNG "Received")
+
+In this part, our Arduino is sending a payload of 25 bytes, which is fine because the payload supports up to 32 bytes. However, this is not recommendable because it is a huge size of information which can be easily fragmented due to interference and even though our system can correct any incomplete information through the Auto-ACK feature, this could make us lose time. 
+The following represents the code of the receiver Arduino which basically processes the information received, displays it and sends the acknowledgement to the transceiver Arduino to indicate the information was correctly received. 
+
+![Fetch it](whatanicefetchcode.PNG "Acknowledgement")
+
+Serial Monitor Sender:
+![Serial Monitor Sender](whatanicemonitorAGAIN.PNG "Serial Monitor Sender")
+
+Serial Monitor Receiver:
+![Serial Monitor Receiver](ohhelloagainserialmonitor.PNG "Serial Monitor Receiver")
+
+#### Sending New Information Only
+Three pieces of information is essential to update the maze - x coordinate, y coordinate and the box value.
+The maze is 4x5 and we follow the system where x coordinate varies from 0 to 3 and the y coordinate varies from 0 to 4. Thus, we can encapsulate new maze data as follows - 2 bits for the x coordinate, 3 bits for the y coordinate and 3 bits for the box value [depending on whether the box has been explored, contains treasure etc]. In this lab, we do not stress on the values for the treasure, but since we’re using three bits for the box value, we have enough bits to associate with various states of the box.
+In total, we have 8 bits or 1 byte of data which needs to be relayed between the Arduinos. Since the default payload size is 32 bytes, we change this accordingly to establish an efficient communication system.
+We pack the byte using the following scheme: 
+x-coordinate (2bits) | y-coordinate (3bits) | box value (3bits)
+
+Sender Side Code:
+![Sender side code](lab4radioarduioncode.PNG "Sender Side Code")
+
+Receiver Side Code:
+![Receiver Side Code](Receiversidecode.PNG "Receiver Side Code")
 
 
 ### The FPGA Team
