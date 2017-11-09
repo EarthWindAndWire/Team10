@@ -23,9 +23,7 @@ Therefore, we may resort to implement a simpler form of the above idea - utilizi
 
 The challenges faced to implement this algorithm were to first come up with a unique ID system for every node. Next, we had to figure out a way to store the edge connections information. We implement this using arrays in MATLAB.
 
-Here’s a video of our simulation (console prints “Maze Explored” when the exploration is complete.) 
-
-<iframe width="560" height="315" src="https://drive.google.com/open?id=1Bv0xKCXqSQcxPTuvB0KSftSBTIcPDFKA" frameborder="0" allowfullscreen></iframe>
+[Here’s](https://drive.google.com/file/d/1Bv0xKCXqSQcxPTuvB0KSftSBTIcPDFKA/view?usp=sharing) a video of our simulation (console prints “Maze Explored” when the exploration is complete.) 
 
 
 ### Simulation
