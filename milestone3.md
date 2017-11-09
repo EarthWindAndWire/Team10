@@ -1,4 +1,5 @@
 ## Milestone 3: Maze Exploration
+Team Members: Tejas Advait, Leandro Dorta Duque, Maria Bobbett, Joshua Diaz, Jennifer Fuhrer, Dean Wang
 
 ### Objective
 The objective of this milestone was to design, test, and implement a maze exploration algorithm. This milestone is split into two parts - 1) development of an algorithm testing tool (simulation) and 2) implementation of the algorithm on the actual robot.
@@ -26,7 +27,6 @@ Here’s a video of our simulation (console prints “Maze Explored”) when the
 
 
 ### Simulation
-We have been facing problems with our line sensors. Also, we didn’t have enough time to translate our MATLAB code for the Arduino. However, this work will be completed very soon.
+We have been facing problems with our line sensors. Also, we didn’t have enough time to translate our MATLAB code for the Arduino. However, this work will be completed very soon, before the start of next week.
 
-Also, we came up with a solution to account for turning cost in real life and aim to test its viability once we debug our robot and complete this part. This solution relies on performing a slight structural modification on how the information of the grid is stored. 
-
+Also, we came up with a solution to account for turning cost in real life and aim to test its viability once we debug our robot and complete this part. This solution relies on performing a slight structural modification on how the information of the grid is stored. We wish to complete the basic maze exploration functionality as soon as possible, within the next two days. We will then look into our original algorithm and keeping track of turning cost.
