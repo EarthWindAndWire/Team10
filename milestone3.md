@@ -16,3 +16,17 @@ The algorithm we designed is a form of greedy algorithm combined with Dijkstra. 
 
 The benefit of using this algorithm is that it performs, somewhat, intelligent back-tracking.
 
+However, after thinking of numerous ways to implement this, we were not able to implement it before the deadline for this milestone. However, we are optimistic after attending the latest lab session that we would be able to implement this algorithm on MATLAB.
+
+Therefore, we may resort to implement a simpler form of the above idea - utilizing depth first search with appropriate modifications.
+
+The challenges faced to implement this algorithm were to first come up with a unique ID system for every node. Next, we had to figure out a way to store the edge connections information. We implement this using arrays in MATLAB.
+
+Here’s a video of our simulation (console prints “Maze Explored”) when the exploration is complete.
+
+
+### Simulation
+We have been facing problems with our line sensors. Also, we didn’t have enough time to translate our MATLAB code for the Arduino. However, this work will be completed very soon.
+
+Also, we came up with a solution to account for turning cost in real life and aim to test its viability once we debug our robot and complete this part. This solution relies on performing a slight structural modification on how the information of the grid is stored. 
+
