@@ -1,1 +1,18 @@
+## Milestone 3: Maze Exploration
+
+### Objective
+The objective of this milestone was to design, test, and implement a maze exploration algorithm. This milestone is split into two parts - 1) development of an algorithm testing tool (simulation) and 2) implementation of the algorithm on the actual robot.
+
+### Simulation
+For simulation purposes, we decided to design and test our algorithm on MATLAB. We used the existing GUI implementation created by Team Alpha. We also looked at the code provided by Bruce Land for ideas. We add extra functionality for keeping track of orientation of the robot and walls.
+
+GUI implementation in MATLAB is very straightforward. [Here’s](https://cei-lab.github.io/ECE3400-2017-teamAlpha/milestone3.html) the link to Team Alpha’s website for Milestone 3.
+
+Firstly, we need to track the current position and orientation of the robot. We do this with the help of global variables cur_x and cur_y, which keep track of the x and y coordinates of the robot. For the tracking of orientation, we use another global variable “orientation.” These variables are modified depending on the command given to the robot. However, the current position of the robot is a function of the robot orientation and the command given to the robot. For eg, if the current orientation of the robot is North (N), and the robot is commanded to make a left turn, the orientation is changed to East (E). This produces no change in the position of the robot. Now, if the command is given to move forward (if there’s a node to go to), keeping in mind the orientation of the robot, the x coordinate decreases by 1 and y coordinate remains the same since the robot moved in the east direction.
+
+[Here](https://docs.google.com/document/d/1FE8QCMpgpKX5vyR-UXhDWZ_2EFmZYrdXxQ5uZHTM7_8/edit?usp=sharing) are the truth tables that might help in understanding the change in orientation, coordinates and the direction of movement of the robot.
+
+The algorithm we designed is a form of greedy algorithm combined with Dijkstra. The algorithm determines the next unvisited node the robot should explore. The algorithm first decides which adjacent node to visit from the current node position depending on the orientation of the robot. The adjacent node which the algorithm doesn’t decide to visit is stored in an array and is marked as partially explored. Once the robot reaches a dead-end, i.e, the robot is surrounded by already visited nodes, Dijkstra’s algorithm is run to determine the closest partially explored node from the current position by assessing path lengths to all the partially explored nodes. The robot goes to the closest partially explored node and repeats the previous steps.
+
+The benefit of using this algorithm is that it performs, somewhat, intelligent back-tracking.
 
