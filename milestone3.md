@@ -25,6 +25,8 @@ The challenges faced to implement this algorithm were to first come up with a un
 
 Here’s a video of our simulation (console prints “Maze Explored” when the exploration is complete.) 
 
+<iframe width="560" height="315" src="https://drive.google.com/open?id=1Bv0xKCXqSQcxPTuvB0KSftSBTIcPDFKA" frameborder="0" allowfullscreen></iframe>
+
 
 ### Simulation
 We have been facing problems with our line sensors. Also, we didn’t have enough time to translate our MATLAB code for the Arduino. However, this work will be completed very soon, before the start of next week.
