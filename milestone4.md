@@ -40,32 +40,33 @@ We have revised our Verilog code to map treasures and walls, and show the visite
 ![VGAScheme](VGAScheme.png "VGAScheme")
 
 Sample Code:
-		//xcoord ycoord are the current x and y sent from the robot
-		//resized to indicate the right x and y in the maze matrix
-		maze_x <= 2*xcoord + 1; 
-		maze_y <= 2*ycoord + 1;
+
+	//xcoord ycoord are the current x and y sent from the robot
+	//resized to indicate the right x and y in the maze matrix
+	maze_x <= 2*xcoord + 1; 
+	maze_y <= 2*ycoord + 1;
 			
-		maze_xlast <= 2*x_last + 1;
-		maze_ylast <= 2*y_last + 1;
+	maze_xlast <= 2*x_last + 1;
+	maze_ylast <= 2*y_last + 1;
 
     treasure[xcoord][ycoord] <= GPIO_1_D[20:19]; 
 		
-		maze[maze_x][maze_y-1] <= north; 
-		maze[maze_x][maze_y+1] <= south;
-		maze[maze_x+1][maze_y] <= east;
-		maze[maze_x-1][maze_y] <= west;
+	maze[maze_x][maze_y-1] <= north; 
+	maze[maze_x][maze_y+1] <= south;
+	maze[maze_x+1][maze_y] <= east;
+	maze[maze_x-1][maze_y] <= west;
 		
-		//set the last square visited, since it used to display current position
-		if(treasure[x_last][y_last]==2'b00) begin //no tresure
-			maze[maze_xlast][maze_ylast] <= 3'b001; end //set as visited
-		else if(treasure[x_last][y_last]==2'b01) begin //treasure 1
-			maze[maze_xlast][maze_ylast] <= 3'b010; end //set as treasure 1
-		else if(treasure[x_last][y_last]==2'b10) begin //treasure 2
-			maze[maze_xlast][maze_ylast] <= 3'b011; end //set as treasure 2
-		else if(treasure[x_last][y_last]==2'b11) begin //treasure 3
-			maze[maze_xlast][maze_ylast] <= 3'b100; end //set as treasure 3
+	//set the last square visited, since it used to display current position
+	if(treasure[x_last][y_last]==2'b00) begin //no tresure
+		maze[maze_xlast][maze_ylast] <= 3'b001; end //set as visited
+	else if(treasure[x_last][y_last]==2'b01) begin //treasure 1
+		maze[maze_xlast][maze_ylast] <= 3'b010; end //set as treasure 1
+	else if(treasure[x_last][y_last]==2'b10) begin //treasure 2
+		maze[maze_xlast][maze_ylast] <= 3'b011; end //set as treasure 2
+	else if(treasure[x_last][y_last]==2'b11) begin //treasure 3
+		maze[maze_xlast][maze_ylast] <= 3'b100; end //set as treasure 3
 			
-		maze[maze_x][maze_y] <= 3'b101; //set as current position
+	maze[maze_x][maze_y] <= 3'b101; //set as current position
 
 We were able to get this scheme working for a 2x2 grid. The arduino sends the FPGA current position, last position, wall, and treasure information. In this video, the “robot” (arduino is spoofing data) is traversing the grid, starting at (0,0), counterclockwise until it reaches (1,0). Walls are on the perimeter of the maze, and there are different frequency treasures at (0,1) and (1,1). Green represents visited, red represents current position, and white represents unvisited.
 
