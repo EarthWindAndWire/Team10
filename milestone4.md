@@ -32,7 +32,7 @@ Our base station arduino then runs the following code to allow the outputs to co
 
 ![BaseStationCode](basestationcode.png "BaseStationCode")
 
-Because the output from the Arduino Mega comes at 5 volts which will kill the FPGA, every pin will have to be connected to a voltage divider, the output from which can be connected to the FPGA (at < 3.3 V). The following scheme is used to connect the Mega Pins to the FPGA’s GPIO_in pins.
+Because the output from the Arduino Mega comes at 5 volts which will kill the FPGA, every pin will have to be connected to a voltage divider, the output from which can be connected to the FPGA (at < 3.3 V). The pins on the Arduino Mega were then hooked up to the first 16 available(not grounded or constantly powered) GPIO_In Pins on the FPGA.
 
 ### VGA Display
 We have revised our Verilog code to map treasures and walls, and show the visited, unvisited, and current locations. We used a 9x11 matrix to keep track of the locations of all of the found walls and treasures, as well as visited intersections. The image below shows an example 3x3 matrix for one intersection. The intersection is represented by a circle, the bars represent walls, and the X’s are locations we don’t care about in the matrix (we don’t need them to map the maze). 
