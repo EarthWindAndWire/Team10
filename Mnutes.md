@@ -92,6 +92,7 @@ Notes:
     - Different design options, omni wheels are the fav but everything needs more research
 ```
 
+
 ### 9/29/17
 ```markdown
 Goals:
@@ -111,9 +112,134 @@ Notes:
 ```
 
 
+### 10/16/17
+```markdown
+Goals:
+- Discuss Lab 3
+
+Notes:
+- Lab 3
+    - Due tomorrrow 
+
+- Lab 4 due next week
+    - Wireless communication
+    
+- Mechanical
+    - keep the servo, have the servos on top
+```
 
 
+### 10/20/17
+```markdown
+Goals:
+- Discuss Lab 4
+- Discuss future deadlines
+- Discuss future goals for overall project?
 
+Notes:
+- Lab 4 VGA team needs to work on packet receiving not neccessarily wirelessly
+- Need to determine final maze scheme and graphics (right now just solid colored square grid)
+- Packets will consist of 1 byte (3 bits for x coordinate, 2 bits for the y coordinate, 3 for state)
+- Wireless communication needs line of sight
+- Brainstorm maze pictures for next meeting
+- Ask TAs about pictures on FPGA
+- Come up with team logo for wheels and engrave names in chassis
+- Ask about laser 
+- Create merch
+- Find out how ordering things work
+
+Action Items:
+- Ask TAs questions above!!
+```
+
+
+### 10/27/17
+```markdown
+Goals:
+- Discuss Lab 4 (again)
+- Discuss milestone 3
+- Discuss future goals for overall project?
+
+Notes:
+- Lab 4 VGA team needs to work on packet receiving not neccessarily wirelessly
+- Need to determine final maze scheme and graphics (right now just solid colored square grid)
+- Packets will consist of 1 byte (3 bits for x coordinate, 2 bits for the y coordinate, 3 for state)
+- Wireless communication needs line of sight
+- Brainstorm maze pictures for next meeting
+- Ask TAs about pictures on FPGA
+- Come up with team logo for wheels and engrave names in chassis
+- Ask about laser 
+- Create merch
+- Find out how ordering things work
+
+Action Items:
+- Ask TAs questions above!!
+```
+
+
+### 10/30/17
+```markdown
+Goals:
+- Discuss updates on Lab 4 FPGA Team
+- Discuss milestone 3
+
+Notes:
+- Lab 4 FPGA - Minor problems remaining
+- TAs don’t know the answer
+- Team FPGA will go on 31st Oct, 2017 and solve their FPGA bugs
+- DFS vs BFS
+- Library for queues and stacks on Arduino or implement our own?
+- Library exists for both
+- Milestone 3 Deadline Nov 8 
+- Milestone 4 Deadline Nov 21
+
+Action Items:
+- Phototransistor alternatives research from Lab 2
+- Start working on Milestone 3 - individual research.
+- Ask Kirstin
+- Merge code
+```
+
+
+### 11/3/17
+```markdown
+Goals:
+- Discuss updates on Lab 4 FPGA Team
+- Discuss milestone 3 and milestone 4
+
+Notes:
+- Lab 4 FPGA - Almost complete
+- Need to improve turning
+- MATLAB Simulation and Arduino code underway
+- Milestone 3 Deadline Nov 8 
+- Milestone 4 Deadline Nov 21
+
+Action Items:
+- Start working on the final version of the robot - wiring, calibration, improve turning etc.
+- Finish MATLAB Simulation code and Arduino code by Tuesday, Nov 7
+- Merge code
+```
+
+
+### 11/12/17
+```markdown
+Goals:
+- Discuss Milestone 4
+- Team Assessment form
+
+Notes:
+- Team Assessment
+    - Due by tomorrow 8am
+    - Do it
+    
+- Milestone 4
+    - Check line following sensors: Maria
+    - Check treasure detection sensors: Dean
+    - Arduino algorithm for mapping the maze: Tejas and Leandro
+    - FPGA and Communication: Jennifer and Joshua
+    
+- Mechanical design in process
+```
 
 
 [Return to main page](index.md)
