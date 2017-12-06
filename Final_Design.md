@@ -49,7 +49,124 @@ Here’s a schematic of our final treasure circuit (the circuit model software d
 
 
 ### Maze-Mapping Algorithm
+Our final maze-mapping algorithm which was present on the robot was very similar to the algorithm used by Team Alpha since we had to prioritize improving the stability of the physical movement of the robot and also tackle the issue of board shutdown. We utilized a simple DFS algorithm for mapping the maze. Since we didn’t have time to debug and optimize the algorithm as well as the robot movement with a new chassis, we made simple modifications to the code provided by Team Alpha in order to guarantee the presence of a working algorithm for the new design.
 
+The maze is represented as a 5x4 matrix with each entry of the ith column and jth row of the matrix representing the node data (wall and treasure) at the ith and jth row of the actual maze.
+
+Each node is given a label or an ID as following:
+``` c
+NodeID= 4 * y + x;
+```
+Where y and x correspond to the y and x coordinates of the node on the maze. The convention of coordinates for the nodes that we follow defines the top left node as (0,0), the node present on the right and on the bottom to it as (1,0) and (0,1) respectively. This creates labels for the node starting from 0 to 19. On the maze, we define the absolute north direction as the direction in which the row containing (0,0) is the top most row.
+
+By following this convention and the above method to define IDs for the nodes, we can extract the coordinates of any node using just their label using the following functions:
+
+```c
+ int get_y(int NodeID) {
+  return NodeID / 4;
+}
+
+int get_x(int NodeID) {
+  return NodeID % 4;
+}
+```
+Each entry of the maze stores data in the form of a binary number of the format 
+![data format](dataformat.PNG "Data Format")
+
+Where N, E, S, and W represent the information regarding walls in the north, east, south, and west direction respectively. 1 means a wall is present while 0 means no wall. And T1 and T0 represent the information regarding the treasure frequency. 0|0 corresponds to presence of no treasure, 0|1 corresponds to 7 kHz, 1|0 to 12 kHz, and 1|1 to 17 kHz.
+
+So for example, if node 2 has walls in the absolute north and the absolute west direction and a 7 kHz frequency treasure, maze[0][2] will contain the binary number 100101 which is nothing but the decimal number 37.
+
+This was the idea, however, since we could not integrate our treasure sensors onto the robot, we removed the T1 and T0 values.
+
+Various initializations had to be made to incorporate for the “known-walls” or the boundary walls which can be assigned to the outer-most nodes.
+
+```c
+void initialize_known_walls() {
+  known_walls[0]  = 9; // 1001
+  known_walls[1]  = 1; // 1000
+  known_walls[2]  = 1; // 1000
+  known_walls[3]  = 12; // 1100
+  known_walls[4]  = 1; // 0001
+  known_walls[5]  = 0; // 0000
+  known_walls[6]  = 0; // 0000
+  known_walls[7]  = 4; // 0100
+  known_walls[8]  = 1; // 0001
+  known_walls[9]  = 0; // 0000
+  known_walls[10] = 0; // 0000
+  known_walls[11] = 4; // 0100
+  known_walls[12] = 1; // 0001
+  known_walls[13] = 0; // 0000
+  known_walls[14] = 0; // 0000
+  known_walls[15] = 4; // 0100
+  known_walls[16] = 3;// 0011
+  known_walls[17] = 2; // 0010
+  known_walls[18] = 2; // 0010
+  known_walls[19] = 6; // 0110
+}
+```
+At every node, the wall sensors tell the robot of the presence of walls and this updates the maze matrix. Using the maze matrix, known walls and the starting position (node 19) along with starting orientation (north), the robot carries out simple DFS as described on Team Alpha’s Milestone 3 webpage.
+
+#### Better Line Following and Turning
+
+In order to make our line following and 90 degree turns robust, we decided to use four sensors instead of 2, like we had been using previously - 3 at the front for line following and 1 at the back for detecting intersections as shown in figure 1 and 2.
+
+![Figure 1](TejassIntersection.PNG "Intersections of a Robot sounds like a great rap song")
+
+![Figure 2](TejassPictureoftherobotsbutt.PNG "MJs Butt")
+
+Also, we took digital input from the sensors instead of analog to save analog pins and avoid multiplexing. To facilitate proper functioning of the sensors, we had to bring them closer to the ground. With a new sensor setup, we had to create new logic for line following and turning.
+A digital value of 1 corresponds to the sensor detecting black while a 0 corresponds to the sensor detecting white
+
+Logic for line following (pseudocode):
+ ```c
+ while (back_sensor does not read 1 ) {
+    if (middle_sensor reads 1 && left_sensor reads 0 && right_sensor reads 0) {
+     go straight;
+    }
+    else if (middle_sensor reads 1 && left_sensor reads 1 && right_sensor reads 0) {
+      make a slight left turn;
+    }
+    else if (middle_sensor reads 1 && left_sensor reads 0 && right_sensor reads 1) {
+     make a slight right turn;
+    }
+    else if (middle_sensor reads 0 && left_sensor reads 1 && right_sensor reads 0) {
+      make a strong left turn;
+    }
+    else if (middle_sensor reads 1 && left_sensor reads 0 && right_sensor reads 0) {
+      make a strong right turn;
+    }
+    else {
+      go straight;
+    }
+ ```
+Once the back sensor detects an intersection, the robot can either continue moving in the same direction, or make a 90 degree turn in either right or left direction, or completely turnaround.
+
+Logic for hard right turn (pseudocode):
+```c
+//Firstly, the front sensors have to get off the black line by turning in the right direction
+  while (middle_sensor reads 1 || left_sensor reads 1){
+make a right turn; 
+}
+//Next, the robot needs to keep turning right till it encounters a new line
+  while (!(middle_sensor reads 1 && left_sensor reads 1)){
+	make a right turn;
+}
+
+Similarly, we get the following logic for making a hard left turn:
+
+//Firstly, the front sensors have to get off the black line by turning in the left direction
+  while (middle_sensor reads 1 || right_sensor reads 1){
+make a left turn; 
+}
+//Next, the robot needs to keep turning left till it encounters a new line
+  while (!(middle_sensor reads 1 && left_sensor reads 1)){
+	make a left turn;
+}
+```
+
+Using this new system, we could significantly improve the line following and 90 degree turning of our robot. For turning around, our robot makes two consecutive right turns.
+All of this pseudocode was easily translated to Arduino code by using the existing movement functions from previous milestones.
 
 ### Base Station
 ![BaseStation](BaseStation.png "BaseStation")
@@ -232,16 +349,24 @@ Arduino simulation code:
 
 Here's a video of our completed simulation on the base station:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3dvZtSK8KO0&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3dvZtSK8KO0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 ### Robot Cost
+- 4 Line sensors: $12
+- 3 IR distance sensors: $21
+- 2 Parallax servos: $26
+- [Arduino Mega](https://www.walmart.com/ip/Mega-2560-R3-REV3-ATmega2560-16AU-Board-USB-Cable-Compatible-For-Arduino/783158877?wmlspartner=wlpa&selectedSellerId=13978&adid=22222222227109229890&wl0=&wl1=g&wl2=c&wl3=233508035254&wl4=pla-384449620960&wl5=9005779&wl6=&wl7=&wl8=&wl9=pla&wl10=117875654&wl11=online&wl12=783158877&wl13=&veh=sem): $10.99
+Total cost: $69.99
+
 
 ### Conclusion/Lessons Learned
+Through this course, we have broadened our knowledge of circuit design, algorithm development, verilog coding/VGA display, signal processing, mechanical prototyping, teamwork, and much more. While our robot did not successfully complete the final maze, we had a great time and learned a lot from this experience.
+
+Here are a few lessons we learned the hard way:
+	1.Integrate, Integrate, Integrate - We completely underestimated the amount of time we would need to successfully integrate individual components. After getting one thing working, we would set it aside and move on to the next task. This left a huge amount of work for us to do at the end. Integrating components as we went would have been a better strategy.
+	2.Communication is key -  We were not the best at communicating with each other, especially when it came to coordinating/delegating tasks. None of us were coordinators according to our Belbin team roles, and weekly leadership was not the strongest. This is something we can be mindful of moving forward.
+	3.Don’t be afraid to ask for help! - Kirsten, the TA’s, and peers are great resources to go to.
+
 
 
 [Return To Main Page](index.md)
