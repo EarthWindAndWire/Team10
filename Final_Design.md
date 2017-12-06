@@ -202,7 +202,7 @@ Arduino simulation code:
 
 Here's a video of our completed simulation on the base station:
 
-<iframe width="560" height="315" src="https://youtu.be/3dvZtSK8KO0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3dvZtSK8KO0&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 
 
 
