@@ -363,9 +363,9 @@ Total cost: $69.99
 Through this course, we have broadened our knowledge of circuit design, algorithm development, verilog coding/VGA display, signal processing, mechanical prototyping, teamwork, and much more. While our robot did not successfully complete the final maze, we had a great time and learned a lot from this experience.
 
 Here are a few lessons we learned the hard way:
-	1.Integrate, Integrate, Integrate - We completely underestimated the amount of time we would need to successfully integrate individual components. After getting one thing working, we would set it aside and move on to the next task. This left a huge amount of work for us to do at the end. Integrating components as we went would have been a better strategy.
-	2.Communication is key -  We were not the best at communicating with each other, especially when it came to coordinating/delegating tasks. None of us were coordinators according to our Belbin team roles, and weekly leadership was not the strongest. This is something we can be mindful of moving forward.
-	3.Don’t be afraid to ask for help! - Kirsten, the TA’s, and peers are great resources to go to.
+1. Integrate, Integrate, Integrate - We completely underestimated the amount of time we would need to successfully integrate individual components. After getting one thing working, we would set it aside and move on to the next task. This left a huge amount of work for us to do at the end. Integrating components as we went would have been a better strategy.
+2. Communication is key -  We were not the best at communicating with each other, especially when it came to coordinating/delegating tasks. None of us were coordinators according to our Belbin team roles, and weekly leadership was not the strongest. This is something we can be mindful of moving forward.
+3. Don’t be afraid to ask for help! - Kirsten, the TA’s, and peers are great resources to go to.
 
 
 
