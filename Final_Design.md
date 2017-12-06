@@ -1,8 +1,38 @@
 ## Final Design of MJ
 
 ### Introduction
-
+The labs have ended and it’s time for MJ to see his (or her) final form! Team 10’s last few weeks of the semester were spent integrating all of the subsystems built in the individual labs and milestones to prepare MJ for his world debut at the ECE 3400 competition. This included: preparing a new mechanical frame for the robot, building an intelligent maze-mapping algorithm, enabling treasure detection, configuring the base station, and communicating the robot with said base  station effectively. Many of these things resulted in complication when faced against the task of integration, and many hours of debugging were spent remedying those issues. In the end, although not every part was able to be combined perfectly, many pieces worked well in tandem and with more debugging would definitely produce an effective maze-mapping robot.
 ### Mechanical Design
+
+#### Overall Design ####
+
+![MJ](MJMechDesignFinal.PNG "Look at dat body")
+
+As we progressed through the various labs and milestones, we noticed our line following quality was degrading. We were using two line sensors for both line and intersection detection. To improve the line following of the robot, we wanted to add more sensors in various orientations, but the current chassis we were using did not allow for easy testing of these different orientations. In addition, we wanted to make the line sensors digital signals to conserve our limited resource of analog pins, so the line sensors had to be very close to the ground to read accurate values to send valid data.
+
+Because of these issues, we decided to redesign the entire robot. A new chassis was laser cut to fit the new 3D printed brackets that held the robot closer the the ground. The chassis stood about an inch off the ground, allowing the line sensors to get much closer to the ground. The line sensor bracket itself had a wide base that allowed for varying sensor orientations that could change just by measuring and drilling new holes. More than one of these brackets were printed to allow for the possibility of swapping between different line sensor orientations.
+
+The wall sensors were all placed on the front “shelf” bracket. The front line sensor had its own extrusion while the side sensors happened to fit on the sides of the bracket. This was easy to mount and kept the wall sensors relatively out of the way of the wires and wheels.
+
+![BRACKET](FSBTHWS.PNG "The pieces of me")
+
+For the treasure circuits, four sliding brackets were designed to account for the unfinalized version of the circuits. The position of the treasure sensor could be moved because the brackets would slide on a shelf mount and then were secured by tightening the screw through it. This feature was not utilized due to the treasure circuit changing in design, as well as treasure detection not being implemented in the final competition.
+
+Then, the wheels were left unchanged in size; only the internal design was modified. Finally, the servo mounts were changed as well, just to interface better with the low-to-the-ground design.
+
+![Wheels Model](SomeHotWheels.PNG "Those are some Hot Wheels")
+
+#### Encountered Problems ####
+
+The main reason this mechanical design suffered was its untested iterations. The design itself was finalized less than a week before the competition which greatly affected our team’s overall system. This meant any problems that arose could not easily be solved due to time constraints.
+
+The design itself could have been improved by making the pieces easier to integrate. A couple of brackets had holes that were not easy to access with screws or nuts. This was especially evident with the line sensor bracket that was short and had several screws going through it that were hard to reach by hand.
+Also, the line sensor bracket ended up being too close to the ground so rubber bands had to be used on the wheels to raise them up, but this led to the robot slipping occasionally. In addition, there was no front support to the robot and it tended to lean and shake forward. To give it more support, two large screws were put into the line sensor bracket so they would stop the robot as it would lean forward. This was not ideal because the sensor bracket was not meant to be structural.
+
+##### Bucking Prevention - The Rock #####
+![The Rock](therock.PNG "The Rock") In the final iteration of our design, the weight of the robot was unevenly distributed. This resulted in the robot tilting forward when it jerked to a stop, which was throwing off the line sensor readings and navigation algorithm. To address this, Maria velcroed a rock to the battery pack towards the back of the robot, which improved performance. Unfortunately, we still had a significant amount of jitter, making movement rough and occasionally messing up the algorithm. 
+
+![MJ Final Design](MJsFInalForm.PNG "THIS ISN'T EVEN MY FINAL FORM, wait yeah it is")
 
 ### Treasure Sensor Circuit Design
 In the final competition of design, we made additional changes to our previous treasure detection circuit. In our previous design, we made two separate circuits the  for two phototransistors. This creates problem for the robot’s mechanical design as it is would require additional mechanical work to stabilize the circuit and balance the robot if we have separate circuits on the side of the robot. It would also require two pins on the arduino uno. Therefore to minimize pins used and circuit used, we used a single filter and amplifier for the final circuit. Two inputs from the phototransistors are connected in parallel and analyzed.
