@@ -47,4 +47,5 @@ The members of this group are bound by the [Team Contract](Contract.md).
 ## Website Sessions:
 
 [1. Milestones](milestones.md)  
-[2. Labs](labsessions.md)
+[2. Labs](labsessions.md)  
+[3. Final Design](Final_Design.md)
